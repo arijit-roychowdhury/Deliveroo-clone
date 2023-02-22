@@ -7,7 +7,7 @@ import { useNavigation } from '@react-navigation/native';
 import MIcon from 'react-native-vector-icons/MaterialIcons';
 import ADIcon from 'react-native-vector-icons/AntDesign';
 
-import Categories from '../components/Categories';
+import Categories from "../components/Categories";
 
 function HomeScreen() {
   const navigation = useNavigation();

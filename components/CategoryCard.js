@@ -1,16 +1,36 @@
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 
 
-function CategoryCard() {
+function CategoryCard({ imgUrl, title }) {
   return (
-    <View>
-      <Text style={styles.dummyText}>Category Card</Text>      
-    </View>
+    <TouchableOpacity style={styles.categoryCard}>
+      <Image
+        style={styles.categoryImg}
+        source={{
+          uri: imgUrl,
+        }}
+      />
+      <Text style={styles.categoryTitle}>{title}</Text>      
+    </TouchableOpacity>
   )
 }
 
 const styles = StyleSheet.create({
-  dummyText: {
+  categoryCard: {
+    marginRight: 20,
+  },
+  categoryImg: {
+    width: 80,
+    height: 80,
+    borderRadius: 20,
+  },
+  categoryTitle: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    textAlign: 'center',
+    backgroundColor: '#770000',
+    width: '100%',
     color: '#fff',
   },
 });
