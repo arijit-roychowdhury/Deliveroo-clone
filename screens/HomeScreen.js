@@ -8,6 +8,7 @@ import MIcon from 'react-native-vector-icons/MaterialIcons';
 import ADIcon from 'react-native-vector-icons/AntDesign';
 
 import Categories from "../components/Categories";
+import FeaturedRow from '../components/FeaturedRow';
 
 function HomeScreen() {
   const navigation = useNavigation();
@@ -59,7 +60,24 @@ function HomeScreen() {
         {/* Categories */}
         <Categories />
 
-        {/* Offers */}
+        {/* Featured */}
+        <FeaturedRow 
+          id="5125"
+          title="Offers near you!"
+          description="Why not support your local restaurent tonight!"
+        />
+
+        <FeaturedRow 
+          id="525"
+          title="Featured"
+          description="Paid placements from our partners"
+        />
+
+        <FeaturedRow 
+          id="125"
+          title="Tasty Discounts"
+          description="Your recent picks"
+        />
       </ScrollView>
 
       <StatusBar style="auto" />
