@@ -10,7 +10,7 @@ function FeaturedRow({ id, title, description }) {
       <View style={styles.headingWrapper}>
         <View style={styles.heading}>
           <Text style={styles.featuredHeading}>{title}</Text>
-          <Text>{description}</Text>
+          <Text style={styles.featuredDesc}>{description}</Text>
         </View>
         <View style={styles.arrowWrapper}>
           <ADIcon name="arrowright" size={25} color="#00ccbb" />
@@ -48,6 +48,9 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#fff',
   },
+  featuredDesc: {
+    color: '#fff',
+  }
 });
 
 export default FeaturedRow;

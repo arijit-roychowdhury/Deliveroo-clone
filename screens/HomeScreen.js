@@ -8,7 +8,7 @@ import MIcon from 'react-native-vector-icons/MaterialIcons';
 import ADIcon from 'react-native-vector-icons/AntDesign';
 
 import FeaturedRow from '../components/FeaturedRow';
-import Categories from '../components/categories';
+import Categories from '../components/Categories';
 
 function HomeScreen() {
   const navigation = useNavigation();
