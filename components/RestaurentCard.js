@@ -1,5 +1,8 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+
 import ADIcon from 'react-native-vector-icons/AntDesign';
+import MIcon from 'react-native-vector-icons/MaterialIcons';
+
 
 
 function RestaurentCard({ 
@@ -24,9 +27,15 @@ function RestaurentCard({
       />
       <View style={styles.cardContentWrapper}>
         <Text style={styles.cardTitle}>{title}</Text>
-        <View style={styles.cardRatingWrapper}>
-          <ADIcon name="star" size={20} color="#00ccbb" />
-          <Text style={styles.cardRating}>{rating}</Text>
+        <View style={styles.cardMeta}>
+          <View style={styles.cardMetaWrapper}>
+            <ADIcon name="star" size={20} color="#00ccbb" />
+            <Text style={styles.cardRating}>{rating}</Text>
+          </View>
+          <View style={styles.cardMetaWrapper}>
+            <MIcon name="fastfood" size={20} color="#00ccbb" />
+            <Text style={styles.cardGenre}>{genre}</Text>
+          </View>
         </View>
       </View>
     </TouchableOpacity>
@@ -36,17 +45,17 @@ function RestaurentCard({
 const styles = StyleSheet.create({
   restaurentCard: {
     marginRight: 20,
-    backgroundColor: '#666',
+    backgroundColor: '#333',
     borderRadius: 20,
   },
   restaurentCardImg: {
-    width: 200,
+    width: 220,
     height: 130,
   },
 
   cardContentWrapper: {
     paddingTop: 10,
-    paddingBottom: 15,
+    paddingBottom: 20,
     paddingHorizontal: 15,
   },
   cardTitle: {
@@ -55,11 +64,20 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
 
-  cardRatingWrapper: {
+  cardMeta: {
+    flexDirection: 'row',
+  },
+  cardMetaWrapper: {
     flexDirection: 'row',
     marginTop: 10,
+    marginRight: 15,
   },
   cardRating: {
+    marginLeft: 8,
+    color: '#ccc',
+    fontSize: 16,
+  },
+  cardGenre: {
     marginLeft: 8,
     color: '#ccc',
     fontSize: 16,
