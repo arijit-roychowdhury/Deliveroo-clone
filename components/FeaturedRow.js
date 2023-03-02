@@ -23,9 +23,18 @@ function FeaturedRow({ id, title, description }) {
       style={styles.container}
       >
         {/* Restaurent Card */}
-        <RestaurentCard imgUrl='https://reactnative.dev/img/tiny_logo.png' title='Testing 1'/>
-        <RestaurentCard imgUrl='https://reactnative.dev/img/tiny_logo.png' title='Testing 2'/>
-        <RestaurentCard imgUrl='https://reactnative.dev/img/tiny_logo.png' title='Testing 3'/>
+        <RestaurentCard 
+        id={12}
+        imgUrl='https://reactnative.dev/img/tiny_logo.png' 
+        title='Biriyani'
+        rating={4.3}
+        genre="Moghlai"
+        address="36, Ballygaunge Kolkata India"
+        short_description="Testing description"
+        dishes={[]}
+        lat={20}
+        long={30}
+        />
       </ScrollView>
     </View>
   )

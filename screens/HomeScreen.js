@@ -46,7 +46,12 @@ function HomeScreen() {
       <View style={styles.searchWrapper}>
         <View style={styles.searchBoxWrapper}>
           <ADIcon name="search1" size={25} color="#00ccbb" />
-          <TextInput style={styles.textInput} placeholder='Hello World!' keyboardType='default'/>
+          <TextInput 
+          style={styles.textInput} 
+          placeholder='Hello World!'
+          placeholderTextColor='#999'
+          keyboardType='default'
+          />
         </View>
 
         <View style={styles.userWrapper}>
