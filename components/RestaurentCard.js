@@ -45,7 +45,9 @@ const styles = StyleSheet.create({
   },
 
   cardContentWrapper: {
-    padding: 10,
+    paddingTop: 10,
+    paddingBottom: 15,
+    paddingHorizontal: 15,
   },
   cardTitle: {
     color: '#fff',
