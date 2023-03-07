@@ -29,7 +29,7 @@ function FeaturedRow({ id, title, description }) {
         title='Biriyani'
         rating={4.3}
         genre="Moghlai"
-        address="36, Ballygaunge Kolkata India"
+        location="Ballygaunge"
         short_description="Testing description"
         dishes={[]}
         lat={20}

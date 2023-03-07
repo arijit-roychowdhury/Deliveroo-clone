@@ -11,7 +11,7 @@ function RestaurentCard({
   title, 
   rating,
   genre,
-  address,
+  location,
   short_description,
   dishes,
   lat,
@@ -37,6 +37,13 @@ function RestaurentCard({
             <Text style={styles.cardGenre}>{genre}</Text>
           </View>
         </View>
+        <View style={styles.cardMeta}>
+          <View style={styles.cardMetaWrapper}>
+            <MIcon name="location-pin" size={20} color="#00ccbb" />
+            <Text style={styles.cardRating}>Nearby .</Text>
+            <Text style={styles.cardGenre}>{location}</Text>
+          </View>
+        </View>
       </View>
     </TouchableOpacity>
   )
@@ -47,9 +54,11 @@ const styles = StyleSheet.create({
     marginRight: 20,
     backgroundColor: '#333',
     borderRadius: 20,
+    maxWidth: 220,
+    minWidth: 220,
   },
   restaurentCardImg: {
-    width: 220,
+    width: "100%",
     height: 130,
   },
 
@@ -66,6 +75,7 @@ const styles = StyleSheet.create({
 
   cardMeta: {
     flexDirection: 'row',
+    flexWrap: 'wrap',
   },
   cardMetaWrapper: {
     flexDirection: 'row',
